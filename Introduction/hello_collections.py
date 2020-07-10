@@ -33,39 +33,63 @@
 #
 # # Tuples are IMMUTABLE
 
+#
+# # Dictionaries
+#
+# my_dict = {"key": "value", "key2": 2}
+# # Key must be unique but value can be any data type
+#
+# big_dict = {
+#     "key1": "value1",
+#     "key2": 2,
+#     "key3": [1,2,3]
+# }
+# print(big_dict)
+#
+# kt_dict = {
+#     'First Name': "Katie",
+#     'Last Name': "McDonnell",
+#     'Age': 23,
+#     'D.O.B': "03/01/97",
+#     'siblings': ["Jim", "Lizzie", "Paddy"]
+# }
+# print(kt_dict)
+# print(kt_dict['Age'])
+#
+# kt_dict['Key'] = 'new value'
+# print(kt_dict)
+#
+# print(kt_dict.keys())
+# print(kt_dict.values())
+#
+# data14 = {
+#     "trainees": ["Alex", "Joe", "Evie", "Jade"],
+#     "course": "Data Engineering",
+#     "start date": "15/06/2020",
+#     "schedule": {
+#         "week 1": 'Business Week',
+#         "week 2": 'SQL'
+#     }
+# }
+#
+# print(data14["trainees"][0])
+# print(data14["schedule"]["week 2"])
 
-# Dictionaries
 
-my_dict = {"key": "value", "key2": 2}
-# Key must be unique but value can be any data type
+# Sets
 
-big_dict = {
-    "key1": "value1",
-    "key2": 2,
-    "key3": [1,2,3]
-}
-print(big_dict)
+car_parts = {"wheels", "doors", "steering wheel"}
+print(car_parts)
+# no order!!!
 
-kt_dict = {
-    'First Name': "Katie",
-    'Last Name': "McDonnell",
-    'Age': 23,
-    'D.O.B': "03/01/97",
-    'siblings': ["Jim", "Lizzie", "Paddy"]
-}
-print(kt_dict)
-print(kt_dict['Age'])
+car_parts.add("pedals")
+print(car_parts)
+car_parts.discard("doors")
+print(car_parts)
 
-kt_dict['Key'] = 'new value'
-print(kt_dict)
 
-print(kt_dict.keys())
-print(kt_dict.values())
+# Frozen Set
 
-data14 = {
-    "trainees": ["Alex", "Joe", "Evie", "Jade"],
-    "course": "Data Engineering",
-    "start date": "15/06/2020"
-}
-
-print(data14["trainees"][0])
+fs = frozenset([1, 2, 3, 4])
+print(fs)
+# Frozen sets are immutable
