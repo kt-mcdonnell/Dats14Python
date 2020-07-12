@@ -1,10 +1,14 @@
 # Fizz Buzz machine
 
+print('What number shall we start from?')
+start_val = int(input())
+print(f"Cool! {start_val} is a good starting point. What number shall we end on?")
+end_val = int(input())
 
 
-counter = 0
+counter = start_val
 
-while counter <= 100:
+while counter < end_val:
     counter += 1
     if counter % 15 == 0:
         print('FIZZBUZZ')
