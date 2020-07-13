@@ -1,17 +1,25 @@
 # Fizz Buzz machine
 
-print('What number shall we start from?')
-start_val = int(input())
-print(f"Cool! {start_val} is a good starting point. What number shall we end on?")
-end_val = int(input())
-print(f"Nice! We will finish at {end_val}")
+def not_int(prompt):
+    val = ""
+    while not val.isnumeric():
+        val = input(prompt)
+        if not val.isnumeric():
+            print('Thats not a number lets try again')
+    return int(val)
+
+
+start = not_int('What is your start number?')
+
+end = not_int('What is your end number?')
+
 print('What word should we say instead of multiples of 3?')
 fizz = input().upper()
 print('Lastly what should we say instead of multiples of 5?')
 buzz = input().upper()
 
-counter = start_val
-while counter < end_val:
+counter = start
+while counter < end:
     counter += 1
     if counter % 15 == 0:
         print(f"{fizz} {buzz}!!!")
@@ -21,3 +29,4 @@ while counter < end_val:
         print(buzz)
     else:
         print(counter)
+
