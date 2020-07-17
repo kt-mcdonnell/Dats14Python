@@ -1,0 +1,26 @@
+Cheeseburger, 
+Pizza, 
+Pasta, 
+ToastCheeseburger, 
+Pizza, 
+Pasta, 
+Toast
+Cheeseburger, 
+Pizza, 
+Pasta, 
+Toast
+Cheeseburger, 
+Pizza, 
+Pasta, 
+ToastPasta
+Kebab
+Hot Dog
+Pasta
+Kebab
+Hot Dog
+Pasta
+Kebab
+Hot Dog
+Pasta
+Kebab
+Hot Dog
